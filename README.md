@@ -43,10 +43,10 @@ Our design was aimed to compare performances of our M cars against the competiti
 Yet, to be more intentional in our study, we determined that safety ratings should take precedent in terms of consumer needs/wants. 
 ### Design: 
 Once we chose our metric of "safety rating"; we asked ourselves: 
-"Analytical question here"?
+"How much variance in the dependent variable of crash rating is accounted for in a linear of combination of independent variable(s) of airbag size and metal chasis design?"
 
 Metric = Safety rating
-Null, Ho = 
-Alt, Ha = 
-We used the "X" statistical test to Z because Y. 
-We need "D" data in order to run this design effectively. Data type determined as "K". 
+Null, Ho = The mean of our safety rating is zero. 
+Alt, Ha = The mean of our safety rating is not equal to zero.
+We used the "Multiple linear regression statistical summary" to show how our variables affect the safety ratings for both our M car and the competition. In doing so, we adopt a continuous data type for both independent variable(s) and the dependent variable. 
+We need at least a sample of n> 30; yet would likely need to strict with our significance level, leaning towards an extreme measurement of 1 in 10,000 or 0.0001 (since lives are at stake in crash ratings).
