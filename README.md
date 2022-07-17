@@ -6,9 +6,9 @@ Our MechaCar_mpg.csv dataset contains mpg test results for a size of 50 cars.
 The "M" cars were designed for ideal performance in mind---our objective here is to track the following metrics: car length, weight, spoiler angle, drivetrain, and ground clearance. 
 We designed a linear model to predict the mpg of each M car. 
 Yet, in doing so we also leveraged R as our primary tool to load the dplyr package, import the csv to a dataframe, and build the regression with our lm() function.
-### Linear Regression Output: 
+### Linear Regression Output and Script: 
+![D1 linear regression](https://user-images.githubusercontent.com/102266450/179380932-82fcec0e-26e1-4049-afc2-5beb40ae5001.gif)
 
-### R Script: 
 ### Findings: 
 We found that x, y, z variables/coefficients provided a non-random amount of variance to the mpg values from our data. 
 We also saw that the slope was/was not zero. And we can state that since the p-value was listed as "X"; this model can/cannot predict mpg of each M car effectively. 
@@ -17,12 +17,11 @@ We also saw that the slope was/was not zero. And we can state that since the p-v
 ### Purpose:
 In our second csv, "Suspension_Coil"; we saw data from multiple production lots. The weight capacities of the coils were tested to see if the manufacturing process was efficient. 
 
-### R Script: 
+### Summary Stats amd R Script: 
 We red the file into R and created our "total_summary" dataframe using the summarize() function. 
 lot_summary() was a made as a dataframe to leverage groupby() and summarize() functions to group each manufacturing lot by the metrics of choice. 
-
-### Summary Stats: 
 As such, we found the suspension coil's PSI variable across all manufacturing lots AND the PSI metrics by mean, median, variance, and stdev. See below:
+![D2 Summary Stats](https://user-images.githubusercontent.com/102266450/179380943-d915a1a9-025b-4bc4-8a83-78ba2e13a6dd.gif)
 
 ### Findings: 
 We found that the metrics indicate an issue with the exceeding of 100 pounds per square inch as the variance for suspension coils. In other words, the manufacturing process was not consistent with our standards for the M car design needs. 
@@ -33,6 +32,7 @@ In our next area of focus, we performed a t-test to see if all manufacturing lot
 
 ### R Script: 
 We leverage the t.test() function to find the PSI across all lots and then wrote the following script with subset() to find the PSI for each lot individually: 
+![D3 T-Tests](https://user-images.githubusercontent.com/102266450/179380953-73bd7829-08ad-4270-be60-d58f4423c3f5.gif)
 
 ### Findings: 
 Something to say here?
