@@ -37,3 +37,9 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# ignore the two csvs
+.MechcaCar_mpg.csv
+
+.Suspension_Coil.csv
+
