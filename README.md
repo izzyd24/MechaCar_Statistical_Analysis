@@ -10,8 +10,9 @@ Yet, in doing so we also leveraged R as our primary tool to load the dplyr packa
 ![D1 linear regression](https://user-images.githubusercontent.com/102266450/179380932-82fcec0e-26e1-4049-afc2-5beb40ae5001.gif)
 
 ### Findings: 
-We found that x, y, z variables/coefficients provided a non-random amount of variance to the mpg values from our data. 
-We also saw that the slope was/was not zero. And we can state that since the p-value was listed as "X"; this model can/cannot predict mpg of each M car effectively. 
+We found the median was close to zero at -0.7. Both Mpg and length coefficients were statistically significant, vehicle weight was not significant, spoiler angle and AWD followed the trend (non-significance). 
+All slopes show to be non-zero, yet vehicle weight and spolier angle seem to be close to zero. 
+We found that x, y, z variables/coefficients provided a non-random amount of variance to the mpg values from our data. This model shows a correlation of .71, adjusted of .68, so we can say the dataset is effective. 
 
 ## D2: Summary Statistics on Suspension Coils
 ### Purpose:
@@ -24,7 +25,7 @@ As such, we found the suspension coil's PSI variable across all manufacturing lo
 ![D2 Summary Stats](https://user-images.githubusercontent.com/102266450/179380943-d915a1a9-025b-4bc4-8a83-78ba2e13a6dd.gif)
 
 ### Findings: 
-We found that the metrics indicate an issue with the exceeding of 100 pounds per square inch as the variance for suspension coils. In other words, the manufacturing process was not consistent with our standards for the M car design needs. 
+We found that the metrics indicate an issue only on one lot---exceeding of 100 pounds per square inch as the variance for suspension coils. In other words, the manufacturing process was relatively consistent with our standards for the M car design needs. Since the variance of the total lot is 62 < 100; this falls within our PSI specifications. We see no issue here. Yet, when we isolate by lots, we see lot 3 has a large variance, 170 > 100 in PSI. This does not meet our needs, and should be focused on. 
 
 ## D3: T-Test on Suspension Coils
 ### Purpose:
@@ -35,7 +36,14 @@ We leverage the t.test() function to find the PSI across all lots and then wrote
 ![D3 T-Tests](https://user-images.githubusercontent.com/102266450/179380953-73bd7829-08ad-4270-be60-d58f4423c3f5.gif)
 
 ### Findings: 
-Something to say here?
+All lots show a .6 > 0.05 p-value; the lot is not statistically significant from the normal distribution. Our mean falls in the 95% confidence interval. 
+Yet, let's now consider each lot individually
+#### Lot 1: 
+1 > 0.05, not statistically significant again. Good Sign. Normal distribution. 
+#### Lot 2: 
+.60 > 0.05, not statistically significant again. Good Sign. Normal distribution. 
+#### Lot 3:
+.04 > 0.05, statistically significant---we cannot assume normality here. 
 
 ## D4: Study Comparing MechaCar to Competitors
 ### Purpose: 
